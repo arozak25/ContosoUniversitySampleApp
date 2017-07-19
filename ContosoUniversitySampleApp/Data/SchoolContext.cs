@@ -17,6 +17,7 @@ namespace ContosoUniversitySampleApp.Data
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Student> Students { get; set; }
 
+
         // This method gonna make the plural field name into singular in the table name on database 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
