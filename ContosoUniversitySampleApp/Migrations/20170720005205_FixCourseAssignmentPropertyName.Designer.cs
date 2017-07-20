@@ -8,9 +8,10 @@ using ContosoUniversitySampleApp.Data;
 namespace ContosoUniversitySampleApp.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    partial class SchoolContextModelSnapshot : ModelSnapshot
+    [Migration("20170720005205_FixCourseAssignmentPropertyName")]
+    partial class FixCourseAssignmentPropertyName
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
